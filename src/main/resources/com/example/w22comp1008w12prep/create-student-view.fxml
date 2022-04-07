@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w22comp1008w12prep.CreateStudentViewController">
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w22comp1008w12prep.controllers.CreateStudentViewController">
    <children>
       <VBox layoutY="-7.0" prefHeight="600.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-7.0">
          <children>

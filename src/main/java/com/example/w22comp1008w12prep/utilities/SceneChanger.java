@@ -1,5 +1,6 @@
-package com.example.w22comp1008w12prep;
+package com.example.w22comp1008w12prep.utilities;
 
+import com.example.w22comp1008w12prep.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -15,7 +16,7 @@ public class SceneChanger {
      * This method will allows us to change scenes
      */
     public static void changeScenes(ActionEvent event, String viewName, String title ) throws IOException {
-        Parent root = FXMLLoader.load(SceneChanger.class.getResource(viewName));
+        Parent root = FXMLLoader.load(Main.class.getResource(viewName));
         Scene scene = new Scene(root);
 
         //get the Stage object from the ActionEvent that is triggered when the button is pushed

@@ -1,4 +1,8 @@
-package com.example.w22comp1008w12prep;
+package com.example.w22comp1008w12prep.utilities;
+
+import com.example.w22comp1008w12prep.models.Course;
+import com.example.w22comp1008w12prep.models.Professor;
+import com.example.w22comp1008w12prep.models.Student;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -1,5 +1,8 @@
-package com.example.w22comp1008w12prep;
+package com.example.w22comp1008w12prep.controllers;
 
+import com.example.w22comp1008w12prep.utilities.DBUtility;
+import com.example.w22comp1008w12prep.models.Professor;
+import com.example.w22comp1008w12prep.utilities.SceneChanger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

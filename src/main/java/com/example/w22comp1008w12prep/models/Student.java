@@ -1,4 +1,4 @@
-package com.example.w22comp1008w12prep;
+package com.example.w22comp1008w12prep.models;
 
 import java.time.LocalDate;
 import java.util.TreeMap;

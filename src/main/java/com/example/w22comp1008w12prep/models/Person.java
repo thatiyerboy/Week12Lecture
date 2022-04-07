@@ -1,4 +1,4 @@
-package com.example.w22comp1008w12prep;
+package com.example.w22comp1008w12prep.models;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -62,8 +62,13 @@ public class Person {
         this.birthday = birthday;
     }
 
+    /**
+     * This method returns the number of full years from the birthday to the current date
+     * @return
+     */
     public Integer getAge()
     {
+
         return Period.between(birthday, LocalDate.now()).getYears();
     }
 
