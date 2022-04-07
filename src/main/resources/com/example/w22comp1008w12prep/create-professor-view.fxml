@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w22comp1008w12prep.CreateProfessorViewController">
+   <children>
+      <VBox layoutX="10.0" layoutY="3.0" prefHeight="603.0" prefWidth="810.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="498.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <HBox>
+               <children>
+                  <VBox prefHeight="247.0" prefWidth="463.0" spacing="5.0">
+                     <children>
+                        <GridPane maxWidth="500.0" prefHeight="165.0" prefWidth="396.0" vgap="15.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="385.0" minWidth="10.0" prefWidth="185.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="612.0" minWidth="10.0" prefWidth="278.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="TOP_LEFT" text="First Name:" />
+                              <Label text="Last Name:" GridPane.rowIndex="1" />
+                              <Label text="Address:" GridPane.rowIndex="2" />
+                              <Label text="Birthday:" GridPane.rowIndex="3" />
+                              <TextField fx:id="firstNameTextField" maxWidth="270.0" promptText="Enter first name" GridPane.columnIndex="1" />
+                              <TextField fx:id="lastNameTextField" maxWidth="270.0" promptText="Enter last name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="addressTextField" maxWidth="270.0" promptText="Enter street and city name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <DatePicker fx:id="birthdayDatePicker" maxWidth="270.0" promptText="Select birthday" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <Button mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+                        <Label fx:id="errMsgLabel" prefHeight="35.0" prefWidth="766.0" text="Label" textFill="#e40b0b" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="coursesVBox" spacing="5.0">
+                     <children>
+                        <Label text="Select Subjects" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <BorderPane prefHeight="126.0" prefWidth="780.0">
+               <right>
+                  <Button mnemonicParsing="false" onAction="#changeToDashboard" text="Dashboard" BorderPane.alignment="CENTER" />
+               </right>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
